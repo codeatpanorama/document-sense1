@@ -6,5 +6,5 @@
 3. Install all the required dependecy by using this script
 
 pip install -r requirements.txt
-
-4. Run the script
+4. Install tesseract on your local and set path
+5. Run the script

@@ -9,18 +9,18 @@ from pdf2image import convert_from_path
 
 filenumber = "4"
 
-pdfs = r"./data/4.pdf"
+pdfs = r"../data/4.pdf"
 pages = convert_from_path(pdfs, 350)
 
 i = 1
 for page in pages:
-    image_name = "data/temp/Page"+filenumber+"_" + str(i) + ".jpg"
+    image_name = "../data/temp/Page"+filenumber+"_" + str(i) + ".jpg"
     page.save(image_name, "JPEG")
     i = i+1
 
 
 # PIL.Image.open('./data/temp/Page_1.jpg')
-img = cv2.imread('./data/temp/Page4_1.jpg')
+img = cv2.imread('../data/temp/Page4_1.jpg')
 
 data = pytesseract.image_to_data(img, lang='mar+eng')
 print(data)
