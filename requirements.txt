@@ -9,3 +9,4 @@ pytesseract
 spacy
 pdf2image
 psycopg2-binary
+flask
